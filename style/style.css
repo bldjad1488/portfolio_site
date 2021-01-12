@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    font-family: 'Roboto';
+}
+
+.container-white {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.container-gray {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #828282; 
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #000000;
+}
+
+header {
+    display: flex;
+    height: 88px;
+    align-items: center;
+    font-size: 1em;
+}
+
+#ul-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.line {
+    background-color: #000000;
+    width: 68%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#denis {
+    width: 100%;
+}
+
+.denis-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0  3em 0;
+
+}
+
+#rus #eng {
+    color: #828282;
+}
+
+#rus:hover #eng:hover {
+    color: #000000;
+}
+
+.lang {
+    transform: rotate(-90deg);
+    height: 0;
+    align-self: center;
+    font-size: 1.2em;
+}
+
+.specs {
+    align-self: flex-end;
+    padding-bottom: 0.4em;
+}
+
+.name {
+    font-size: 1.5em;
+}
