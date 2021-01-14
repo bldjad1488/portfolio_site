@@ -150,3 +150,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media (max-width: 875px) {
+    .photoshop {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .photoshop {
+        width: 100%
+    }
+}
