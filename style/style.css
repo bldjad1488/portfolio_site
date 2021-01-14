@@ -93,6 +93,60 @@ header {
     font-size: 1.5em;
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.5em;
+    padding-top: 3em;
+}
+
 .about-content {
-    width: 300px;
+    width: 50%;
+    text-align: center;
+}
+
+.about-content > h2, .about-content > p {
+    margin: 2em; 
+}
+
+.skills-container {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills > h2 {
+    margin-bottom: 2em; 
+}
+
+.skills > p {
+    margin-bottom: 4em;
+}
+
+.stars > img {
+    margin-top: 1em;
+}
+
+.photoshop {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+    margin-bottom: 2em;
+}
+
+.photoshop > p {
+    margin-top: 1.5em;
+    width: 60%;
+    align-self: center;
+    
+}
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
