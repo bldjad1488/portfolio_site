@@ -92,3 +92,7 @@ header {
 .name {
     font-size: 1.5em;
 }
+
+.about-content {
+    width: 300px;
+}
