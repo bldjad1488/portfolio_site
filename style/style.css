@@ -162,3 +162,21 @@ header {
         width: 100%
     }
 }
+
+.portfolio {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.portfolio > h2 {
+    margin-bottom: 1.7em;
+}
+
+.portfolio > img{
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.portfolio > p {
+    padding-bottom: 5em;
+}
