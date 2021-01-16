@@ -1,13 +1,35 @@
+/* imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.mobile-menu-overlay {
+    display: none;
+}
 
 * {
     margin: 0;
     padding: 0;
-    background-origin: border-box;
     font-family: 'Roboto';
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #828282; 
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #000000;
+}
+
+
+/* containers */
 .container-white {
     width: 100%;
     background-color: #ffffff;
@@ -24,18 +46,11 @@
     max-width: 70%;
 }
 
-li {
-    list-style: none;
-}
 
-a {
-    text-decoration: none;
-    color: #828282; 
-    transition: 0.5s;
-}
+/* header */
 
-a:hover {
-    color: #000000;
+.hamburger {
+    display: none;
 }
 
 header {
@@ -67,7 +82,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 3em 0  3em 0;
-
 }
 
 #rus #eng {
@@ -94,6 +108,9 @@ header {
     font-size: 1.5em;
 }
 
+
+/* about */
+
 .about {
     display: flex;
     justify-content: center;
@@ -109,6 +126,9 @@ header {
 .about-content > h2, .about-content > p {
     margin: 2em; 
 }
+
+
+/* skills */
 
 .skills-container {
     padding-top: 4em;
@@ -152,17 +172,8 @@ header {
     justify-content: center;
 }
 
-@media (max-width: 875px) {
-    .photoshop {
-        width: 50%;
-    }
-}
 
-@media (max-width: 480px) {
-    .photoshop {
-        width: 100%
-    }
-}
+/* portfolio */
 
 .portfolio {
     text-align: center;
@@ -186,6 +197,9 @@ header {
     text-decoration: underline;
     font-weight: 300;
 }
+
+
+/* contacts */
 
 .contacts-container {
     padding-top: 5em;
@@ -229,9 +243,21 @@ header {
 }
 
 
+/* media queries */
+
+/* .photoshop optimization */
+@media (max-width: 875px) {
+    .photoshop {
+        width: 50%;
+    }
+}
+@media (max-width: 480px) {
+    .photoshop {
+        width: 100%
+    }
+}
 
 /* some responsive for iphone x */
-
 @media (max-width: 530px) {
     .center {
         max-width: 100%;
@@ -241,6 +267,14 @@ header {
     header {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    header > ul > li {
+        display: none;
+    }
+
+    .line {
+        display: none;
     }
 
     .about-content {
@@ -254,5 +288,80 @@ header {
     .skills-container {
         padding-top: 4em;
         padding-bottom: 2em;
+    }
+
+    /* menu overlay for mobile */
+
+    .mobile-menu-wrapper {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 2;
+        display: none;
+    }
+
+    .mobile-menu-overlay {
+        display: flex;  
+        /* flex */
+        height: 100vh;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: 3;
+    }
+    .mobile-menu-overlay > ul > li {
+        font-size: 4em;
+        margin-bottom: 0.4em;
+    }
+    .mobile-menu-overlay > ul {
+        width: 80%;
+        padding: 3em 0 0 2em;
+    }
+
+    .exit {
+        position: relative;
+        right: 2em;
+        top: 3em;
+    }
+
+    .exit > img {
+        width: 2em;
+    }
+    
+    .language {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 2em;
+        height: 1em;
+        font-size: 2em;
+        transform: rotate(-90deg);
+    }
+
+    /* hambburger */
+
+    .hamburger {
+        display: block;
+        width: 3em;
+        position: absolute;
+        top: 2em;
+        right: 0.7em;
+    }
+
+    /* .hamburger > img {
+        transform: translate(1350%, 1.5em);
+    } */
+
+    /* intro */
+
+    .lang {
+        display: none;
+    }
+    .name {
+        transform: translateY(-3em);
+    }
+    .specs {
+        position: absolute;
+        left: 0.2em;
+        transform: translateY(0.7em);
     }
 }
