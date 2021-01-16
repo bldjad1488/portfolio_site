@@ -49,7 +49,7 @@ a:hover {
 
 /* header */
 
-.hamburger {
+#hamburger {
     display: none;
 }
 
@@ -258,7 +258,7 @@ header {
 }
 
 /* some responsive for iphone x */
-@media (max-width: 530px) {
+@media (max-width: 650px) {
     .center {
         max-width: 100%;
         margin: 0;
@@ -317,13 +317,13 @@ header {
         padding: 3em 0 0 2em;
     }
 
-    .exit {
+    #exit {
         position: relative;
         right: 2em;
         top: 3em;
     }
 
-    .exit > img {
+    #exit > img {
         width: 2em;
     }
     
@@ -339,7 +339,16 @@ header {
 
     /* hambburger */
 
-    .hamburger {
+    .mobile-header {
+        display: block;
+        width: 100%;
+        height: 85px;
+        position: fixed;
+        background-color: #ffffff;
+        z-index: 2;
+    }
+
+    #hamburger {
         display: block;
         width: 3em;
         position: absolute;
@@ -347,21 +356,21 @@ header {
         right: 0.7em;
     }
 
-    /* .hamburger > img {
-        transform: translate(1350%, 1.5em);
-    } */
-
     /* intro */
 
     .lang {
         display: none;
     }
     .name {
-        transform: translateY(-3em);
+        transform: translateY(-2em);
     }
     .specs {
         position: absolute;
         left: 0.2em;
         transform: translateY(0.7em);
+    }
+
+    .portfolio > img {
+        margin-bottom: 1em;
     }
 }

@@ -1,19 +1,13 @@
-let hamburgerButton = document.querySelectorAll('.hamburger');
-let exitButton = document.querySelectorAll('.exit > img');
-let mobileMenu = document.querySelector('.mobile-menu-wrapper');
+'use strict';
 
-function open() {
-    mobileMenu.style.display = 'block';
-}
+let menu = document.querySelector('.mobile-menu-wrapper');
 
-function close() {
-    mobileMenu.style.display = 'none';
-}
+document.getElementById('hamburger').onclick = function() {
+    menu.style.display = 'block';
+};
 
-hamburgerButton.addEventListener('click', open);
-
-let button = document.querySelectorAll('.buttonn');
-
-button.addEventListener('click', open());
+document.getElementById('exit').onclick = function() {
+    menu.style.display = 'none';
+};
 
 
