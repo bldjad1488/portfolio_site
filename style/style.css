@@ -159,11 +159,15 @@ header {
     margin-bottom: 2em;
 }
 
+.photoshop > img {
+    width: 50%;
+    align-self: center;
+}
+
 .photoshop > p {
     margin-top: 1.5em;
     width: 60%;
     align-self: center;
-    
 }
 
 .programs {
